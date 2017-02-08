@@ -9,7 +9,7 @@ angular.module("currencyExchange")
         scripts = scripts[scripts.length-1].src.split("/");
 
         directive.restrict = "E";
-        directive.templateUrl = scripts[0] + "assets/scripts/templates/ce-calculator.html";
+        directive.templateUrl = scripts[0] + "currency-exchange-js/assets/scripts/templates/ce-calculator.html";
         directive.scope = {};
 
         directive.link = function(scope, element, attrs) {
