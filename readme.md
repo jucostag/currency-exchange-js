@@ -29,4 +29,4 @@ Then you can use the directive:
 <ce-calculator></ce-calculator>
 ```
 
-![Currency Exchange Calculator Preview](https://cdn.pbrd.co/images/vxT1YlbC3.jpg)
+![Currency Exchange Calculator Preview](https://cdn.pbrd.co/images/vZZ82TmSj.png)
