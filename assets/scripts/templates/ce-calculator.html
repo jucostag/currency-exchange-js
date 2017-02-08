@@ -3,7 +3,7 @@
 		<option ng-repeat="(initials, currency) in currencies" value="{{ initials }}" ng-selected="initials == 'BRL'">{{ currency.name }}</option>
 	</select>
 
-	<div class="selectedCurrency">Moeda escolhida</div>
+	<div class="selectedCurrency">Selected currency</div>
 	<div class="leftCurrency"><span class="flag flag-{{initialsOne}}"></span>{{ initialsOne }}</div>
 	<div class="rightCurrency">
 	<div class="currencySymbol">{{ symbolOne }}</div>
@@ -15,14 +15,14 @@
 	<select ng-model="currencyPickerTwo" id="currencyPickerTwo" name="currencyPickerTwo" ng-change="setSymbolTwo(currencyPickerTwo)">
 		<option ng-repeat="(initials, currency) in currencies" value="{{ initials }}" ng-selected="initials == 'USD'">{{ currency.name }}</option>
 	</select>
-	<div class="selectedCurrency">Moeda escolhida</div>
+	<div class="selectedCurrency">Selected currency</div>
 	<div class="leftCurrency"><span class="flag flag-{{initialsTwo}}"></span> {{ initialsTwo }}</div>
 	<div class="rightCurrency">
 	<div class="currencySymbol">{{ symbolTwo }}</div>
 		<input id="exchangevalue" disabled="disabled" type="text" value="{{ exchange }}" />
 	</div>
 		
-	<button class="calculateExchangeBtn" class="btn" ng-click="calculate(currencyPickerOne, currencyPickerTwo, originalValue)">Converter</button>
+	<button class="calculateExchangeBtn" class="btn" ng-click="calculate(currencyPickerOne, currencyPickerTwo, originalValue)">Convert</button>
 	<center ng-if="error !== ''">
 		<div class="alert alert-danger" role="alert">{{error}}</div>
 	</center>
