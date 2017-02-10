@@ -5,11 +5,9 @@ angular.module("currencyExchange")
     .directive("ceCalculator", ["yahooFinanceApi", "currenciesApi", function(yahooFinanceApi, currenciesApi) {
 
         var directive = {};
-        var scripts = document.getElementsByTagName("script");
-        scripts = scripts[scripts.length-1].src.split("/");
 
         directive.restrict = "E";
-        directive.templateUrl = scripts[0] + "currency-exchange-js/assets/scripts/templates/ce-calculator.html";
+        directive.templateUrl = "ce-calculator.html";
         directive.scope = {};
 
         directive.link = function(scope, element, attrs) {
